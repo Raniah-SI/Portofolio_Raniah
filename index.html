@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Raniah | Mahasiswa Sistem Informasi FMIPA Universitas Tanjungpura</title>
+  <meta name="description"
+    content="Portofolio resmi Raniah - Mahasiswa Jurusan Sistem Informasi Fakultas Matematika & Ilmu Pengetahuan Alam (MIPA) Universitas Tanjungpura.">
+  <meta name="author" content="Raniah">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons (Clean & Minimal) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Toast Notification untuk Salin Kontak -->
+  <div id="toastNotification" class="toast-notification" role="alert" aria-live="polite">
+    <i class="fa-solid fa-check-circle"></i>
+    <span id="toastMessage">Teks berhasil disalin!</span>
+  </div>
+
+  <!-- Header / Navigation Bar Sederhana -->
+  <header class="navbar-wrapper" id="navbarWrapper">
+    <nav class="navbar container" aria-label="Navigasi Utama">
+      <a href="#home" class="nav-brand">
+        <span class="brand-name">Raniah</span>
+        <span class="brand-tag">Sistem Informasi UNTAN</span>
+      </a>
+
+      <!-- Menu Navigasi Sederhana -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Beranda</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">Latar Belakang</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Riwayat Pendidikan</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Informasi Kontak</a></li>
+      </ul>
+
+      <!-- Tombol Hamburger Mobile -->
+      <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Bagian Awal / Perkenalan (Hero Section) -->
+    <section class="hero-section section-padding" id="home">
+      <div class="container hero-container">
+
+        <!-- Konten Teks Perkenalan -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Mahasiswa Aktif</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, Saya <span class="text-highlight">Raniah</span> 👋
+          </h1>
+
+          <div class="hero-identity-box">
+            <p class="hero-role">
+              Mahasiswa Jurusan Sistem Informasi<br>
+              <strong>Fakultas Matematika &amp; Ilmu Pengetahuan Alam (MIPA)</strong><br>
+              <strong>Universitas Tanjungpura</strong>
+            </p>
+          </div>
+
+          <p class="hero-desc">
+            Selamat datang di portofolio pribadi saya. Sebagai mahasiswa Sistem Informasi di Universitas Tanjungpura,
+            saya memiliki ketertarikan dalam perancangan sistem, eksplorasi teknologi digital, dan pengembangan diri.
+            Saya berdedikasi untuk terus belajar, memperluas wawasan keilmuan, serta siap berkolaborasi dalam berbagai
+            kegiatan akademik maupun organisasi.
+          </p>
+
+          <!-- Tombol Aksi Sederhana (Hanya Hubungi Saya & Info Profil, Tanpa Lihat Karya) -->
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Hubungi Saya</span>
+            </a>
+            <a href="#about" class="btn btn-outline">
+              <i class="fa-solid fa-user"></i>
+              <span>Tentang Saya</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kartu Profil dengan Foto Bulat & Deskripsi Tentang Raniah -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-avatar-circle">
+              <img src="images/profile.jpg" alt="Foto Profil Raniah" class="profile-circle-img">
+            </div>
+
+            <div class="profile-card-details">
+              <h3 class="profile-name">Raniah</h3>
+              <p class="profile-status">Mahasiswa S1 Sistem Informasi</p>
+
+              <div class="profile-meta-list">
+                <div class="profile-meta-item">
+                  <span class="meta-label">Fakultas:</span>
+                  <span class="meta-val">MIPA</span>
+                </div>
+                <div class="profile-meta-item">
+                  <span class="meta-label">Universitas:</span>
+                  <span class="meta-val">Universitas Tanjungpura (UNTAN)</span>
+                </div>
+                <div class="profile-meta-item">
+                  <span class="meta-label">Program Studi:</span>
+                  <span class="meta-val">S1 Sistem Informasi</span>
+                </div>
+                <div class="profile-meta-item">
+                  <span class="meta-label">Domisili:</span>
+                  <span class="meta-val">Pontianak, Kalimantan Barat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. Latar Belakang & Siapa Saya -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <h2 class="section-title">Latar Belakang &amp; Siapa Saya</h2>
+          <p class="section-subtitle">
+            Mengenal profil diri, kepribadian, minat, serta kemampuan komunikasi yang saya miliki.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Kartu 1: Perkenalan Latar Belakang -->
+          <div class="about-card">
+            <div class="card-top">
+              <div class="card-icon"><i class="fa-solid fa-id-card"></i></div>
+              <h3 class="card-title">Siapa Saya</h3>
+            </div>
+            <div class="card-body-text">
+              <p>
+                Saya adalah mahasiswa aktif <strong>Jurusan Sistem Informasi, Fakultas Matematika &amp; Ilmu Pengetahuan
+                  Alam (MIPA), Universitas Tanjungpura</strong>.
+              </p>
+              <p>
+                Sebagai seorang Mahasiswa, saya menyukai proses memahami keterkaitan antara kebutuhan manusia, alur
+                informasi, dan teknologi komputer. Saya senang mengeksplorasi wawasan baru baik di dalam maupun di luar
+                ruang perkuliahan.
+              </p>
+              <p>
+                Saya memiliki komitmen tinggi terhadap tanggung jawab, menjunjung integritas, serta siap beradaptasi
+                dalam kerja kelompok maupun tugas individual.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kartu 2: Hobi, Minat & Bakat -->
+          <div class="about-card">
+            <div class="card-top">
+              <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+              <h3 class="card-title">Hobi, Minat &amp; Bakat</h3>
+            </div>
+            <div class="card-body-text">
+              <div class="detail-block">
+                <h4 class="block-title"><i class="fa-solid fa-heart"></i> Hobi</h4>
+                <ul class="simple-list">
+                  <li><strong>Membaca Novel :</strong> Menyukai buku novel fiksi, non-fiksi.</li>
+                  <li><strong>Eksplorasi Tren Digital :</strong> Mengikuti perkembangan software, aplikasi
+                    produktivitas,
+                    dan media interaktif.</li>
+                  <li><strong>Bermain Game :</strong> Mengisi waktu luang dengan bermain berbagai jenis game.</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4 class="block-title"><i class="fa-solid fa-compass"></i> Minat</h4>
+                <ul class="simple-list">
+                  <li><strong>Sistem Informasi :</strong> Mempelajari analisis proses bisnis, struktur data, dan
+                    arsitektur sistem.</li>
+                  <li><strong>Perancangan Antarmuka :</strong> Tertarik pada konsep kemudahan penggunaan (UI/UX).
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4 class="block-title"><i class="fa-solid fa-award"></i> Bakat</h4>
+                <ul class="simple-list">
+                  <li><strong>Deep Work :</strong> Kemampuan fokus dalam mengerjakan sesuatu dalam waktu yang lama.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 3: Kemampuan Bahasa (Hanya Bahasa Indonesia & English) -->
+          <div class="about-card">
+            <div class="card-top">
+              <div class="card-icon"><i class="fa-solid fa-language"></i></div>
+              <h3 class="card-title">Kemampuan Bahasa</h3>
+            </div>
+            <div class="card-body-text">
+              <p class="lang-intro">Penguasaan bahasa untuk komunikasi akademik dan penyusunan dokumen:</p>
+
+              <!-- Bahasa Indonesia -->
+              <div class="language-item">
+                <div class="language-info">
+                  <span class="lang-name">Bahasa Indonesia</span>
+                  <span class="lang-badge">Penutur Asli (Native)</span>
+                </div>
+                <div class="language-bar">
+                  <div class="language-fill fill-100"></div>
+                </div>
+                <p class="lang-desc">
+                  Sangat fasih dalam komunikasi lisan berbahasa Indonesia maupun tulisan formal, serta penulisan karya
+                  ilmiah.
+                </p>
+              </div>
+
+              <!-- English -->
+              <div class="language-item">
+                <div class="language-info">
+                  <span class="lang-name">English (Bahasa Inggris)</span>
+                  <span class="lang-badge">Menengah (Intermediate)</span>
+                </div>
+                <div class="language-bar">
+                  <div class="language-fill fill-80"></div>
+                </div>
+                <p class="lang-desc">
+                  Mampu membaca dan memahami literatur teks berbahasa Inggris, dokumentasi sistem/IT, serta komunikasi
+                  dasar.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Riwayat Pendidikan & Prestasi (Hanya Pendidikan Tinggi, Prestasi Duta Literasi SMA, dan Pendidikan SMA) -->
+    <section class="education-section section-padding" id="education">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <h2 class="section-title">Riwayat Pendidikan &amp; Prestasi</h2>
+          <p class="section-subtitle">
+            Jejak pendidikan akademik dan pencapaian yang pernah saya raih.
+          </p>
+        </div>
+
+        <div class="timeline-list">
+
+          <!-- 1. Pendidikan Tinggi -->
+          <div class="timeline-card">
+            <div class="timeline-badge-tag tag-edu">Pendidikan Tinggi</div>
+            <div class="timeline-header">
+              <h3 class="timeline-role">S1 Sistem Informasi</h3>
+              <span class="timeline-time">2026 - Sekarang (Aktif)</span>
+            </div>
+            <h4 class="timeline-place">
+              <i class="fa-solid fa-building-columns"></i>
+              Universitas Tanjungpura, Fakultas Matematika & Ilmu Pengetahuan Alam (MIPA)
+            </h4>
+            <p class="timeline-text">
+              Sedang menempuh program sarjana pada Jurusan Sistem Informasi. Mempelajari konsep perancangan sistem,
+              manajemen data dan basis data, rekayasa perangkat lunak, serta penerapan teknologi informasi untuk
+              mendukung
+              kebutuhan organisasi.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-pill">Sistem Informasi</span>
+              <span class="tag-pill">Fakultas MIPA</span>
+              <span class="tag-pill">Universitas Tanjungpura</span>
+            </div>
+          </div>
+
+          <!-- 2. Prestasi sebagai Duta Literasi saat SMA -->
+          <div class="timeline-card achievement-card">
+            <div class="timeline-badge-tag tag-achieve">Prestasi Siswa</div>
+            <div class="timeline-header">
+              <h3 class="timeline-role">Prestasi: Duta Literasi Sekolah</h3>
+              <span class="timeline-time">Masa Pendidikan SMA</span>
+            </div>
+            <h4 class="timeline-place">
+              <i class="fa-solid fa-award"></i>
+              Tingkat Sekolah Menengah Atas (SMA)
+            </h4>
+            <p class="timeline-text">
+              Dianugerahi amanah dan penghargaan sebagai <strong>Duta Literasi</strong> saat menempuh pendidikan di SMAN
+              10 Pontianak.
+              Berperan aktif dalam menggerakkan minat baca di kalangan pelajar, mempromosikan kegiatan kepenulisan,
+              mendukung pengelolaan pojok baca/perpustakaan sekolah, serta menjadi teladan dalam penguatan budaya
+              literasi.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-pill">Duta Literasi</span>
+              <span class="tag-pill">Minat Baca &amp; Edukasi</span>
+              <span class="tag-pill">Kepemimpinan Pelajar</span>
+            </div>
+          </div>
+
+          <!-- 3. Pendidikan SMA -->
+          <div class="timeline-card">
+            <div class="timeline-badge-tag tag-edu">Pendidikan Menengah</div>
+            <div class="timeline-header">
+              <h3 class="timeline-role">Pendidikan Sekolah Menengah Atas (SMA)</h3>
+              <span class="timeline-time">Lulus</span>
+            </div>
+            <h4 class="timeline-place">
+              <i class="fa-solid fa-school"></i>
+              SMAN 10 Pontianak
+            </h4>
+            <p class="timeline-text">
+              Menyelesaikan pendidikan jenjang SMA dengan peminatan IPA. Mendapatkan fondasi logika matematika, sains,
+              serta aktif dalam kegiatan kesiswaan dan pengembangan kemampuan literasi.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-pill">IPA</span>
+              <span class="tag-pill">Pendidikan SMA</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Informasi Kontak (Sederhana Tanpa Fitur Get In Touch / Tanpa Form Pesan) -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <h2 class="section-title">Informasi Kontak</h2>
+          <p class="section-subtitle">
+            Silakan hubungi saya melalui saluran kontak berikut untuk keperluan perkuliahan, diskusi akademik, atau
+            jejaring komunikasi.
+          </p>
+        </div>
+
+        <div class="contact-card-wrapper">
+          <div class="contact-card">
+
+            <div class="contact-grid">
+
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-title">Alamat Email</span>
+                  <a href="mailto:h1101261024@student.untan.ac.id" id="contactEmail" class="contact-value">
+                    h1101261024@student.untan.ac.id
+                  </a>
+                </div>
+                <button type="button" class="btn-copy" id="btnCopyEmail" title="Salin Email">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Salin</span>
+                </button>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-title">WhatsApp / Telepon</span>
+                  <a href="https://wa.me/6281545186817" target="_blank" rel="noopener noreferrer" class="contact-value">
+                    +62 815-4518-6817
+                  </a>
+                </div>
+              </div>
+
+              <!-- Institusi / Domisili -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-title">Institusi &amp; Domisili</span>
+                  <span class="contact-value">
+                    Fakultas MIPA, Universitas Tanjungpura — Pontianak, Kalimantan Barat
+                  </span>
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="contact-detail">
+                  <span class="contact-title">Instagram</span>
+                  <a href="https://www.instagram.com/ywppi_?exln=MmQxaHV5OXl1OHJz" target="_blank"
+                    rel="noopener noreferrer" class="contact-value" title="Instagram @ywppi_">
+                    @ywppi_
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Sederhana -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <p class="footer-title">Raniah</p>
+        <p class="footer-desc">
+          Mahasiswa Jurusan Sistem Informasi, Fakultas Matematika &amp; Ilmu Pengetahuan Alam (MIPA), Universitas
+          Tanjungpura.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Beranda</a>
+        <a href="#about">Latar Belakang</a>
+        <a href="#education">Riwayat Pendidikan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>© 2026 Raniah. Portofolio Mahasiswa Sistem Informasi FMIPA UNTAN.</p>
+        <a href="#home" class="back-to-top" aria-label="Kembali ke atas">
+          <i class="fa-solid fa-arrow-up"></i> Ke Atas
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript (Ringan, Cepat, Tanpa Animasi) -->
+  <script src="script.js"></script>
+</body>
+
+</html>
